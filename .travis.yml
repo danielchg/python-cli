@@ -3,10 +3,10 @@ language: python
 python:
   - "3.6"
 install:
-  - pip install pytest
+  - pip install tox
 
 script: 
-  - python -m pytest tests/test-cli.py
+  - tox
 
 branches:
   only:

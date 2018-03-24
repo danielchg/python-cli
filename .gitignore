@@ -2,3 +2,5 @@ venv
 cli.egg-info
 *.pyc
 .cache
+.pytest_cache
+.tox
