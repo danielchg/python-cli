@@ -1,7 +1,13 @@
-nguage: python
+language: python
+
 python:
   - "3.6"
-script: python tests/test-cli.py
+install:
+  - pip install pytest
+
+script: 
+  - python -m pytest tests/test-cli.py
+
 branches:
   only:
     - master
